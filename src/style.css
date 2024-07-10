@@ -85,7 +85,7 @@
   }
   @media (max-width: 991px) {
     html {
-      font-size: 90%;
+      font-size: 95%;
     }
   }
   @media (max-width: 768px) {
@@ -95,17 +95,17 @@
   }
   @media (max-width: 575px) {
     html {
-      font-size: 70%;
+      font-size: 75%;
     }
   }
   @media (max-width: 480px) {
     html {
-      font-size: 60%;
+      font-size: 72%;
     }
   }
   @media (max-width: 280px) {
     html {
-      font-size: 50%;
+      font-size: 60%;
     }
   }
 

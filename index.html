@@ -39,7 +39,7 @@
           />
         </a>
         <nav
-          class="navbar absolute top-[100%] left-0 right-0 bg-stone-100 md:bg-none dark:bg-bgDarkColor border-t border-t-stone-300 md:py-2 px-3 py-4 z-10 dark:border-t-slate-800 md:relative md:block md:border-none !duration-300 clip-path-add md:clip-path-none"
+          class="navbar absolute top-[100%] left-0 right-0 bg-stone-100 md:bg-transparent md:dark:bg-transparent dark:bg-bgDarkColor border-t border-t-stone-300 md:py-2 px-3 py-4 z-10 dark:border-t-slate-800 md:relative md:block md:border-none !duration-300 clip-path-add md:clip-path-none"
         >
           <ul class="flex flex-col md:flex-row items-center gap-5 lg:gap-8">
             <li class="inline-block">
@@ -646,13 +646,14 @@
       <l-waveform size="50" stroke="3.5" speed="1" color="white"></l-waveform>
     </div>
 
-    <script   src="js/main.js"></script>
-
     <!-- lodars cdns -->
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/waveform.js"
     ></script>
+
+    <script   src="js/script.js"></script>
+
 
     <script>
       fadeout();

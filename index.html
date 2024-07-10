@@ -1,668 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creative your Skills</title>
 
-    <link rel="shortest icon" href="./img/dicover-icon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative your Skills</title>
 
-    <!-- link font-awesome icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+  <link rel="shortest icon" href="./img/dicover-icon.png" />
 
-    <!-- link remixicon css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-    />
+  <!-- link font-awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <!-- link tailwind css -->
-    <link rel="stylesheet" href="./src/style.css" />
-  </head>
+  <!-- link remixicon css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
 
-  <body>
-    <!-- header section start -->
-    <header
-      class="fixed left-0 right-0 top-0 mx-auto py-4 lg:py-5 z-[1200] bg-stone-100 dark:bg-bgDarkColor border-b border-l-[12px] border-l-mainColor border-stone-300 dark:border-slate-800 dark:border-l-greenColor"
-    >
+  <!-- link tailwind css -->
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <!-- header section start -->
+  <header
+    class="fixed left-0 right-0 top-0 mx-auto py-4 lg:py-5 z-[1200] bg-stone-100 dark:bg-bgDarkColor border-b border-l-[12px] border-l-mainColor border-stone-300 dark:border-slate-800 dark:border-l-greenColor">
+    <div class="px-5 md:px-0 flex items-center container mx-auto justify-between">
+      <a href="#home">
+        <img src="img/logo.png" class="w-[80%] md:w-[90%] lg:max-w-full dark:invert" alt="" />
+      </a>
+      <nav
+        class="navbar absolute top-[100%] left-0 right-0 bg-stone-100 md:bg-transparent md:dark:bg-transparent dark:bg-bgDarkColor border-t border-t-stone-300 md:py-2 px-3 py-4 z-10 dark:border-t-slate-800 md:relative md:block md:border-none !duration-300 clip-path-add md:clip-path-none">
+        <ul class="flex flex-col md:flex-row items-center gap-5 lg:gap-8">
+          <li class="inline-block">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="inline-block">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="inline-block">
+            <a class="nav-link" href="#upskill">Upskill</a>
+          </li>
+          <li class="inline-block">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex items-center gap-5 lg:gap-8">
+        <button class="my-btn">Register Interest</button>
+        <i class="ri-moon-line text-2xl cursor-pointer hover:text-mainColor dark:hover:text-greenColor"
+          id="theme-btn"></i>
+        <i class="fas fa-bars text-2xl md:hidden inline-block cursor-pointer hover:text-mainColor dark:hover:text-greenColor"
+          id="bars-btn"></i>
+      </div>
+    </div>
+  </header>
+  <!-- header section end -->
+
+  <main>
+    <!-- hero section start -->
+    <section class="relative min-h-[60vh] home" id="home">
+      <img src="img/Wave.svg" class="absolute z-10 dark:invert bottom-0" alt="" />
+
       <div
-        class="px-5 md:px-0 flex items-center container mx-auto justify-between"
-      >
-        <a href="#home">
-          <img
-            src="img/logo.png"
-            class="w-[80%] md:w-[90%] lg:max-w-full dark:invert"
-            alt=""
-          />
-        </a>
-        <nav
-          class="navbar absolute top-[100%] left-0 right-0 bg-stone-100 md:bg-transparent md:dark:bg-transparent dark:bg-bgDarkColor border-t border-t-stone-300 md:py-2 px-3 py-4 z-10 dark:border-t-slate-800 md:relative md:block md:border-none !duration-300 clip-path-add md:clip-path-none"
-        >
-          <ul class="flex flex-col md:flex-row items-center gap-5 lg:gap-8">
-            <li class="inline-block">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="inline-block">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="inline-block">
-              <a class="nav-link" href="#upskill">Upskill</a>
-            </li>
-            <li class="inline-block">
-              <a class="nav-link" href="#contact">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="flex items-center gap-5 lg:gap-8">
-          <button class="my-btn">Register Interest</button>
-          <i
-            class="ri-moon-line text-2xl cursor-pointer hover:text-mainColor dark:hover:text-greenColor"
-            id="theme-btn"
-          ></i>
-          <i
-            class="fas fa-bars text-2xl md:hidden inline-block cursor-pointer hover:text-mainColor dark:hover:text-greenColor"
-            id="bars-btn"
-          ></i>
+        class="bg-[url(/img/home.jpeg)] relative overflow-hidden min-h-[40vh] md:min-h-[60vh] lg:min-h-[100vh] w-full bg-cover bg-bottom contrast-125 dark:contrast-150 border-l-[12px] border-mainColor dark:border-greenColor mt-20">
+        <div class="container mx-auto px-3 lg:px-0">
+          <div class="max-w-4xl mx-auto text-center pt-10 lg:pt-[70px] pb-[120px] dark:z-10">
+            <p class="text-textWhiteColor font-bold pb-7">
+              Discover <span class="text-mainColor">-</span> Interact
+              <span class="text-mainColor">-</span> Engage
+            </p>
+            <h2 class="text-3xl lg:text-6xl font-bold text-textWhiteColor">
+              Connecting
+              <span class="underline text-mainColor">talent</span> to <br />
+              opportunity through
+              <span class="text-mainColor underline">skills</span>
+            </h2>
+            <p class="text-lg text-textWhiteColor py-5 lg:py-7">
+              We forster a skill-focussed environment enabling students to
+              navigate their career with their self-paced learning journey and
+              businesses to gain market-ready talent.
+            </p>
+            <a href="#" class="text-mainColor bg-textWhiteColor py-3 my-btn rounded-full px-8 text-lg font-bold">Ask
+              questions</a>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- header section end -->
+    </section>
+    <!-- hero section end -->
 
-    <main>
-      <!-- hero section start -->
-      <section class="relative min-h-[60vh] home" id="home">
-        <img
-          src="img/Wave.svg"
-          class="absolute z-10 dark:invert bottom-0"
-          alt=""
-        />
+    <!-- about section   -->
+    <section class="about" id="about">
+      <!-- We Empower:  section start -->
+      <section class="container mx-auto px-3 lg:px-0 mt-8 lg:mt-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 place-items-center gap-5">
+          <div class="px-3 pt-7 flex items-start justify-center flex-col lg:col-span-2 md:col-span-2">
+            <h2 class="text-boldColor dark:text-textWhiteColor font-bold text-[40px]">
+              At
+              <span class="underline text-mainColor">C4U, <br class="hidden lg:block" /></span>
+              We Empower:
+            </h2>
+          </div>
 
-        <div
-          class="bg-[url(/img/home.jpeg)] relative overflow-hidden min-h-[40vh] md:min-h-[60vh] lg:min-h-[100vh] w-full bg-cover bg-bottom contrast-125 dark:contrast-150 border-l-[12px] border-mainColor dark:border-greenColor mt-20"
-        >
-          <div class="container mx-auto px-3 lg:px-0">
-            <div
-              class="max-w-4xl mx-auto text-center pt-10 lg:pt-[70px] pb-[120px] dark:z-10"
-            >
-              <p class="text-textWhiteColor font-bold pb-7">
-                Discover <span class="text-mainColor">-</span> Interact
-                <span class="text-mainColor">-</span> Engage
-              </p>
-              <h2 class="text-3xl lg:text-6xl font-bold text-textWhiteColor">
-                Connecting
-                <span class="underline text-mainColor">talent</span> to <br />
-                opportunity through
-                <span class="text-mainColor underline">skills</span>
-              </h2>
-              <p class="text-lg text-textWhiteColor py-5 lg:py-7">
-                We forster a skill-focussed environment enabling students to
-                navigate their career with their self-paced learning journey and
-                businesses to gain market-ready talent.
-              </p>
-              <a
-                href="#"
-                class="text-mainColor bg-textWhiteColor py-3 my-btn rounded-full px-8 text-lg font-bold"
-                >Ask questions</a
-              >
-            </div>
+          <div class="bg-boldColor px-3 pt-7">
+            <i
+              class="fas fa-certificate w-10 h-10 rounded-full text-center leading-10 bg-textWhiteColor text-mainColor"></i>
+            <h2 class="text-lg font-bold text-textWhiteColor pt-2 pb-4">
+              Students
+            </h2>
+            <p class="text-sm font-normal pb-5 text-[#DDDDDD]">
+              We help students find their way in a fast-evolving world by
+              creating a personalised learning journey guaranteed to help
+              stand out in a crowded job market.
+            </p>
+          </div>
+
+          <div class="bg-boldColor px-3 pt-7">
+            <i
+              class="fas fa-graduation-cap w-10 h-10 rounded-full text-center leading-10 bg-textWhiteColor text-mainColor"></i>
+            <h2 class="text-lg font-bold text-textWhiteColor pt-2 pb-4">
+              Universities
+            </h2>
+            <p class="text-sm font-normal pb-5 text-[#DDDDDD]">
+              We help students find their way in a fast-evolving world by
+              creating a personalised learning journey guaranteed to help
+              stand out in a crowded job market.
+            </p>
+          </div>
+
+          <div class="bg-boldColor px-3 pt-7">
+            <i class="fas fa-user w-10 h-10 rounded-full text-center leading-10 bg-textWhiteColor text-mainColor"></i>
+            <h2 class="text-lg font-bold text-textWhiteColor pt-2 pb-4">
+              Businesses
+            </h2>
+            <p class="text-sm font-normal pb-5 text-[#DDDDDD]">
+              We help students find their way in a fast-evolving world by
+              creating a personalised learning journey guaranteed to help
+              stand out in a crowded job market.
+            </p>
           </div>
         </div>
       </section>
-      <!-- hero section end -->
+      <!-- We Empower:  section end -->
 
-      <!-- about section   -->
-      <section class="about" id="about">
-        <!-- We Empower:  section start -->
-        <section class="container mx-auto px-3 lg:px-0 mt-8 lg:mt-24">
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 place-items-center gap-5"
-          >
-            <div
-              class="px-3 pt-7 flex items-start justify-center flex-col lg:col-span-2 md:col-span-2"
-            >
-              <h2
-                class="text-boldColor dark:text-textWhiteColor font-bold text-[40px]"
-              >
-                At
-                <span class="underline text-mainColor"
-                  >C4U, <br class="hidden lg:block"
-                /></span>
-                We Empower:
-              </h2>
-            </div>
-
-            <div class="bg-boldColor px-3 pt-7">
-              <i
-                class="fas fa-certificate w-10 h-10 rounded-full text-center leading-10 bg-textWhiteColor text-mainColor"
-              ></i>
-              <h2 class="text-lg font-bold text-textWhiteColor pt-2 pb-4">
-                Students
-              </h2>
-              <p class="text-sm font-normal pb-5 text-[#DDDDDD]">
-                We help students find their way in a fast-evolving world by
-                creating a personalised learning journey guaranteed to help
-                stand out in a crowded job market.
-              </p>
-            </div>
-
-            <div class="bg-boldColor px-3 pt-7">
-              <i
-                class="fas fa-graduation-cap w-10 h-10 rounded-full text-center leading-10 bg-textWhiteColor text-mainColor"
-              ></i>
-              <h2 class="text-lg font-bold text-textWhiteColor pt-2 pb-4">
-                Universities
-              </h2>
-              <p class="text-sm font-normal pb-5 text-[#DDDDDD]">
-                We help students find their way in a fast-evolving world by
-                creating a personalised learning journey guaranteed to help
-                stand out in a crowded job market.
-              </p>
-            </div>
-
-            <div class="bg-boldColor px-3 pt-7">
-              <i
-                class="fas fa-user w-10 h-10 rounded-full text-center leading-10 bg-textWhiteColor text-mainColor"
-              ></i>
-              <h2 class="text-lg font-bold text-textWhiteColor pt-2 pb-4">
-                Businesses
-              </h2>
-              <p class="text-sm font-normal pb-5 text-[#DDDDDD]">
-                We help students find their way in a fast-evolving world by
-                creating a personalised learning journey guaranteed to help
-                stand out in a crowded job market.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- We Empower:  section end -->
-
-        <!-- min section -->
-        <section
-          class="relative container px-3 lg:px-0 mx-auto py-12 overflow-hidden"
-        >
-          <div class="relative overflow-hidden">
-            <img
-              src="img/line-img.png"
-              class="absolute hidden md:block right-0 left-0 h-full mx-auto"
-              alt=""
-            />
-            <!-- our mission section start -->
-            <section class="container mx-auto my-28">
-              <div
-                class="px-0 lg:px-10 flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20"
-              >
-                <div class="w-full md:w-1/2">
-                  <span class="text-sm font-normal text-[#FC5A5A]"
-                    >ABOUT US</span
-                  >
-                  <h2
-                    class="font-semibold text-5xl text-boldColor dark:text-stone-100 pt-4"
-                  >
-                    OUR MISSION
-                  </h2>
-                  <p
-                    class="text-lg font-normal pt-14 text-textColor1 dark:text-textColor2 max-w-[458px]"
-                  >
-                    To create a personalised pathway for continuous <br />
-                    learning and transferrable skills development.
-                  </p>
-                  <a href="#" class="my-btn-outline mt-10 lg:mt-24"
-                    >Find out more <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-
-                <div class="w-full md:w-1/2">
-                  <img
-                    src="img/new-mission-img.png"
-                    class="max-w-full"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </section>
-            <!-- our mission section end -->
-
-            <!-- our vision section end -->
-            <section class="container mx-auto my-28">
-              <div
-                class="px-0 lg:px-10 mx-auto flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20"
-              >
-                <div class="w-full md:w-1/2">
-                  <img src="img/Right.png" class="max-w-full" alt="" />
-                </div>
-
-                <div class="w-full md:w-1/2">
-                  <span class="text-sm font-normal text-[#FC5A5A]"
-                    >ABOUT US</span
-                  >
-                  <h2
-                    class="font-semibold text-5xl text-boldColor dark:text-stone-100 pt-4"
-                  >
-                    OUR MISSION
-                  </h2>
-                  <p
-                    class="text-lg font-normal pt-14 text-textColor1 dark:text-textColor2 max-w-[458px]"
-                  >
-                    To create a personalised pathway for continuous learning and
-                    transferrable skills development.
-                  </p>
-                  <a href="#" class="my-btn-outline mt-10 lg:mt-24"
-                    >Find out more <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-              </div>
-            </section>
-
-            <!-- our vison section end -->
-          </div>
-        </section>
-        <!-- main section -->
-      </section>
-
-      <!-- up to skills -->
-      <section class="upskill" id="upskill">
-        <!-- Discover - Interact - Engage  section start -->
-        <section class="container mx-auto mt-10 lg:mt-[96px]">
-          <div
-            class="grid grid-cols-1 px-3 lg:px-0 container md:grid-cols-3 place-items-start place-content-center gap-10 md:gap-12 lg:gap-20"
-          >
-            <div
-              class="pt-8 border border-stone-300 dark:border-slate-800 w-full p-1"
-            >
-              <img src="img/dicover-icon.png" class="max-w-full" alt="" />
-              <h2
-                class="text-2xl font-bold pt-6 pb-5 text-textColor1 dark:text-stone-100"
-              >
-                Dicover
-              </h2>
-              <p class="text-[#757095] text-lg md:text-sm font-medium">
-                We uncover students unique skill to stand out in a crowded
-                market
-              </p>
-            </div>
-            <div
-              class="pt-8 borderborder border border-stone-300 dark:border-slate-800 w-full p-1"
-            >
-              <img src="img/interact icon.png" class="max-w-full" alt="" />
-              <h2
-                class="text-2xl font-bold pt-6 pb-5 text-textColor1 dark:text-stone-100"
-              >
-                Interact
-              </h2>
-              <p class="text-[#757095] text-lg md:text-sm font-medium">
-                We oppe door to new opportunities by expanding your
-                transferrable skills
-              </p>
-            </div>
-            <div
-              class="pt-8 borderborder border border-stone-300 dark:border-slate-800 w-ful p-1"
-            >
-              <img src="img/engage.png" class="max-w-full" alt="" />
-              <h2
-                class="text-2xl font-bold pt-6 pb-5 text-textColor1 dark:text-stone-100"
-              >
-                Engage
-              </h2>
-              <p class="text-[#757095] text-lg md:text-sm font-medium">
-                To forester to focussed environment that enable students to
-                navigate thier idea career
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- discover - interact - engage  section start -->
-
-        <!-- our team section start -->
-        <section class="container mx-auto px-3 lg:px-0 mt-[96px]">
-          <div class="container mx-auto">
-            <div class="relative max-w-[424px]">
-              <h2
-                class="text-[40px] font-semibold text-boldColor dark:text-stone-100"
-              >
-                The Creative Team <br />
-                behind <span class="text-mainColor">the door</span>
-              </h2>
-              <img
-                src="img/line-img-2.png"
-                class="max-w-full absolute -right-[50px] top-[65px]"
-                alt=""
-              />
-            </div>
-
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-3 pt-20"
-            >
-              <div
-                class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800"
-              >
-                <img src="img/image 1.png" alt="" />
-                <h2
-                  class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6"
-                >
-                  Ekta Mahajan
+      <!-- min section -->
+      <section class="relative container px-3 lg:px-0 mx-auto py-12 overflow-hidden">
+        <div class="relative overflow-hidden">
+          <img src="img/line-img.png" class="absolute hidden md:block right-0 left-0 h-full mx-auto" alt="" />
+          <!-- our mission section start -->
+          <section class="container mx-auto my-28">
+            <div class="px-0 lg:px-10 flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20">
+              <div class="w-full md:w-1/2">
+                <span class="text-sm font-normal text-[#FC5A5A]">ABOUT US</span>
+                <h2 class="font-semibold text-5xl text-boldColor dark:text-stone-100 pt-4">
+                  OUR MISSION
                 </h2>
-                <span
-                  class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]"
-                  >Founder & C.E.O</span
-                >
-                <div
-                  class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor"
-                >
-                  <i class="ri-phone-line"></i>
-                  <i
-                    class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"
-                  ></i>
-                  <i class="ri-linkedin-box-line"></i>
-                </div>
-              </div>
-              <div
-                class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800"
-              >
-                <img src="img/image 2.png" alt="" />
-                <h2
-                  class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6"
-                >
-                  Toby Potter-Drake
-                </h2>
-                <span
-                  class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]"
-                  >Product Manager Associate</span
-                >
-                <div
-                  class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor"
-                >
-                  <i class="ri-phone-line"></i>
-                  <i
-                    class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"
-                  ></i>
-                  <i class="ri-linkedin-box-line"></i>
-                </div>
-              </div>
-              <div
-                class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800"
-              >
-                <img src="img/image 3.png" alt="" />
-                <h2
-                  class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6"
-                >
-                  Ross Davies
-                </h2>
-                <span
-                  class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]"
-                  >Corporate Growth Associate</span
-                >
-                <div
-                  class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor"
-                >
-                  <i class="ri-phone-line"></i>
-                  <i
-                    class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"
-                  ></i>
-                  <i class="ri-linkedin-box-line"></i>
-                </div>
-              </div>
-              <div
-                class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800"
-              >
-                <img src="img/image 4.png" alt="" />
-                <h2
-                  class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6"
-                >
-                  Leo crozier
-                </h2>
-                <span
-                  class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]"
-                  >Software Developer</span
-                >
-                <div
-                  class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor"
-                >
-                  <i class="ri-phone-line"></i>
-                  <i
-                    class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"
-                  ></i>
-                  <i class="ri-linkedin-box-line"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- our team section end -->
-      </section>
-
-      <!-- contact section -->
-      <section class="contact" id="contact">
-        <!-- footer section start -->
-        <section class="container mx-auto pt-[170px] pb-20">
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 lg:gap-7 px-3 lg:px-0 place-items-start *:place-self-start"
-          >
-            <div class="lg:col-span-2">
-              <a href="#">
-                <img
-                  src="./img/logo.png"
-                  class="max-w-full dark:invert"
-                  alt=""
-                />
-              </a>
-
-              <address class="pt-5">
-                <p class="text-base font-light">
-                  Level39 One Canada Square, Canary Wharf, London, E14 5AB
+                <p class="text-lg font-normal pt-14 text-textColor1 dark:text-textColor2 max-w-[458px]">
+                  To create a personalised pathway for continuous <br />
+                  learning and transferrable skills development.
                 </p>
-              </address>
-            </div>
+                <a href="#" class="my-btn-outline mt-10 lg:mt-24">Find out more <i class="fas fa-arrow-right"></i></a>
+              </div>
 
-            <div>
-              <h2
-                class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6"
-              >
-                Home
-              </h2>
-              <ul>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Collaborations</a
-                  >
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Statistics</a
-                  >
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    How It Works
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Testimonials
-                  </a>
-                </li>
-              </ul>
+              <div class="w-full md:w-1/2">
+                <img src="img/new-mission-img.png" class="max-w-full" alt="" />
+              </div>
             </div>
+          </section>
+          <!-- our mission section end -->
 
-            <div>
-              <h2
-                class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6"
-              >
-                About Us
-              </h2>
-              <ul>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Who We Are</a
-                  >
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Mission statement
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Our Vision
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    The Team
-                  </a>
-                </li>
-              </ul>
+          <!-- our vision section end -->
+          <section class="container mx-auto my-28">
+            <div class="px-0 lg:px-10 mx-auto flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-20">
+              <div class="w-full md:w-1/2">
+                <img src="img/Right.png" class="max-w-full" alt="" />
+              </div>
+
+              <div class="w-full md:w-1/2">
+                <span class="text-sm font-normal text-[#FC5A5A]">ABOUT US</span>
+                <h2 class="font-semibold text-5xl text-boldColor dark:text-stone-100 pt-4">
+                  OUR MISSION
+                </h2>
+                <p class="text-lg font-normal pt-14 text-textColor1 dark:text-textColor2 max-w-[458px]">
+                  To create a personalised pathway for continuous learning and
+                  transferrable skills development.
+                </p>
+                <a href="#" class="my-btn-outline mt-10 lg:mt-24">Find out more <i class="fas fa-arrow-right"></i></a>
+              </div>
             </div>
+          </section>
 
-            <div>
-              <h2
-                class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6"
-              >
-                Upskill
-              </h2>
-              <ul>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    It Support
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Project Managment
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Data Analysts
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Ux Design
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h2
-                class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6"
-              >
-                Contact Us
-              </h2>
-              <ul>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-chat-1-line pe-[5px] text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Your message
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-mail-send-line pe-[5px] text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1"> Email </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="fas fa-phone pe-[5px] text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Phone number
-                  </a>
-                </li>
-                <li class="group duration-300 pb-5">
-                  <i
-                    class="ri-linkedin-box-fill pe-[5px] text-base text-mainColor dark:text-greenColor"
-                  ></i
-                  ><a href="#" class="footer-link group-hover:ps-1">
-                    Linkedin
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- footer section end -->
-
-        <div
-          class="text-center capitalize pt-5 border-t dark:border-slate-800 mb-5"
-        >
-          <p class="text-sm text-[#20484F] dark:text-textColor2">
-            Copyright 2024 Creatives For You LTD
-          </p>
-          <span class="text-mainColor text-xs dark:text-greenColor"
-            >creatro Md Saiful islam (saifulsylhet00@gmail.com)
-            <br />
-            student at Hablu Programmer😊
-          </span>
+          <!-- our vison section end -->
         </div>
       </section>
-    </main>
+      <!-- main section -->
+    </section>
 
-    <div
-      class="loader-box will-change-scroll top-0 fixed left-0 right-0 bottom-0 w-screen h-screen scroll-y-hidden bg-black z-[1300] flex items-center justify-center"
-    >
-      <l-waveform size="50" stroke="3.5" speed="1" color="white"></l-waveform>
-    </div>
+    <!-- up to skills -->
+    <section class="upskill" id="upskill">
+      <!-- Discover - Interact - Engage  section start -->
+      <section class="container mx-auto mt-10 lg:mt-[96px]">
+        <div
+          class="grid grid-cols-1 px-3 lg:px-0 container md:grid-cols-3 place-items-start place-content-center gap-10 md:gap-12 lg:gap-20">
+          <div class="pt-8 border border-stone-300 dark:border-slate-800 w-full p-1">
+            <img src="img/dicover-icon.png" class="max-w-full" alt="" />
+            <h2 class="text-2xl font-bold pt-6 pb-5 text-textColor1 dark:text-stone-100">
+              Dicover
+            </h2>
+            <p class="text-[#757095] text-lg md:text-sm font-medium">
+              We uncover students unique skill to stand out in a crowded
+              market
+            </p>
+          </div>
+          <div class="pt-8 borderborder border border-stone-300 dark:border-slate-800 w-full p-1">
+            <img src="img/interact icon.png" class="max-w-full" alt="" />
+            <h2 class="text-2xl font-bold pt-6 pb-5 text-textColor1 dark:text-stone-100">
+              Interact
+            </h2>
+            <p class="text-[#757095] text-lg md:text-sm font-medium">
+              We oppe door to new opportunities by expanding your
+              transferrable skills
+            </p>
+          </div>
+          <div class="pt-8 borderborder border border-stone-300 dark:border-slate-800 w-ful p-1">
+            <img src="img/engage.png" class="max-w-full" alt="" />
+            <h2 class="text-2xl font-bold pt-6 pb-5 text-textColor1 dark:text-stone-100">
+              Engage
+            </h2>
+            <p class="text-[#757095] text-lg md:text-sm font-medium">
+              To forester to focussed environment that enable students to
+              navigate thier idea career
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- discover - interact - engage  section start -->
 
-    <!-- lodars cdns -->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/waveform.js"
-    ></script>
+      <!-- our team section start -->
+      <section class="container mx-auto px-3 lg:px-0 mt-[96px]">
+        <div class="container mx-auto">
+          <div class="relative max-w-[424px]">
+            <h2 class="text-[40px] font-semibold text-boldColor dark:text-stone-100">
+              The Creative Team <br />
+              behind <span class="text-mainColor">the door</span>
+            </h2>
+            <img src="img/line-img-2.png" class="max-w-full absolute -right-[50px] top-[65px]" alt="" />
+          </div>
 
-    <script   src="js/script.js"></script>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-3 pt-20">
+            <div
+              class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800">
+              <img src="img/image 1.png" alt="" />
+              <h2 class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6">
+                Ekta Mahajan
+              </h2>
+              <span class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]">Founder & C.E.O</span>
+              <div class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor">
+                <i class="ri-phone-line"></i>
+                <i
+                  class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"></i>
+                <i class="ri-linkedin-box-line"></i>
+              </div>
+            </div>
+            <div
+              class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800">
+              <img src="img/image 2.png" alt="" />
+              <h2 class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6">
+                Toby Potter-Drake
+              </h2>
+              <span class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]">Product Manager
+                Associate</span>
+              <div class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor">
+                <i class="ri-phone-line"></i>
+                <i
+                  class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"></i>
+                <i class="ri-linkedin-box-line"></i>
+              </div>
+            </div>
+            <div
+              class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800">
+              <img src="img/image 3.png" alt="" />
+              <h2 class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6">
+                Ross Davies
+              </h2>
+              <span class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]">Corporate Growth
+                Associate</span>
+              <div class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor">
+                <i class="ri-phone-line"></i>
+                <i
+                  class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"></i>
+                <i class="ri-linkedin-box-line"></i>
+              </div>
+            </div>
+            <div
+              class="text-center py-7 flex flex-col items-center justify-center px-6 border border-stone-300 dark:border-slate-800">
+              <img src="img/image 4.png" alt="" />
+              <h2 class="font-bold text-2xl text-textColor1 dark:text-stone-100 pt-6">
+                Leo crozier
+              </h2>
+              <span class="text-sm font-normal text-textColor1 dark:text-textColor2 pt-[10px]">Software Developer</span>
+              <div class="flex items-center gap-5 pt-5 *:text-4xl *:text-greenColor">
+                <i class="ri-phone-line"></i>
+                <i
+                  class="ri-mail-open-line border border-boldColor/50 dark:border-textColor2/50 px-1 border-dashed"></i>
+                <i class="ri-linkedin-box-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our team section end -->
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <!-- footer section start -->
+      <section class="container mx-auto pt-[170px] pb-20">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 lg:gap-7 px-3 lg:px-0 place-items-start *:place-self-start">
+          <div class="lg:col-span-2">
+            <a href="#">
+              <img src="./img/logo.png" class="max-w-full dark:invert" alt="" />
+            </a>
+
+            <address class="pt-5">
+              <p class="text-base font-light">
+                Level39 One Canada Square, Canary Wharf, London, E14 5AB
+              </p>
+            </address>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6">
+              Home
+            </h2>
+            <ul>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Collaborations</a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Statistics</a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  How It Works
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Testimonials
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6">
+              About Us
+            </h2>
+            <ul>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Who We Are</a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Mission statement
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Our Vision
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  The Team
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6">
+              Upskill
+            </h2>
+            <ul>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  It Support
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Project Managment
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Data Analysts
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-arrow-right-s-line text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Ux Design
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-footertextColor text-xl dark:text-textWhiteColor pb-6">
+              Contact Us
+            </h2>
+            <ul>
+              <li class="group duration-300 pb-5">
+                <i class="ri-chat-1-line pe-[5px] text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Your message
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-mail-send-line pe-[5px] text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1"> Email </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="fas fa-phone pe-[5px] text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Phone number
+                </a>
+              </li>
+              <li class="group duration-300 pb-5">
+                <i class="ri-linkedin-box-fill pe-[5px] text-base text-mainColor dark:text-greenColor"></i><a href="#"
+                  class="footer-link group-hover:ps-1">
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- footer section end -->
+
+      <div class="text-center capitalize pt-5 border-t dark:border-slate-800 mb-5">
+        <p class="text-sm text-[#20484F] dark:text-textColor2">
+          Copyright 2024 Creatives For You LTD
+        </p>
+        <span class="text-mainColor text-xs dark:text-greenColor">creatro Md Saiful islam (saifulsylhet00@gmail.com)
+          <br />
+          student at Hablu Programmer😊
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <div
+    class="loader-box will-change-scroll top-0 fixed left-0 right-0 bottom-0 w-screen h-screen scroll-y-hidden bg-black z-[1300] flex items-center justify-center">
+    <l-waveform size="50" stroke="3.5" speed="1" color="white"></l-waveform>
+  </div>
+
+  <!-- lodars cdns -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/waveform.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
 
 
-    <script>
-      fadeout();
-      function loader() {
-        document.querySelector(".loader-box").classList.add("hidden");
-      }
-      function fadeout() {
-        setTimeout(loader, 2500);
-      }
-    </script>
-  </body>
+  <script>
+    fadeout();
+    function loader() {
+      document.querySelector(".loader-box").classList.add("hidden");
+    }
+    function fadeout() {
+      setTimeout(loader, 2500);
+    }
+  </script>
+</body>
+
 </html>

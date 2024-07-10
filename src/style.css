@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply !scroll-smooth !scroll-pt-24  !overflow-x-hidden;
+  }
+  html::-webkit-scrollbar {
+    @apply w-4;
+  }
+  html::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  html::-webkit-scrollbar-thumb {
+    @apply bg-navTextColor;
+  }
+
+  body {
+    @apply text-textColor1 box-border bg-stone-100 !overflow-x-hidden tracking-wider  font-jakarta dark:text-textWhiteColor dark:bg-bgDarkColor font-normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-boldColor;
+  }
+}
+@layer components {
+  .my-btn-outline {
+    @apply px-5 py-3 text-base font-bold rounded-full border-2 inline-block border-mainColor hover:bg-mainColor text-mainColor hover:text-textWhiteColor active:bg-greenColor;
+  }
+  .my-btn {
+    @apply inline-block px-3 py-2 md:px-4 md:py-[10px] text-textWhiteColor font-normal capitalize rounded-lg bg-mainColor active:bg-greenColor;
+  }
+
+  .nav-link {
+    @apply relative duration-300 text-navTextColor dark:text-textWhiteColor font-normal px-[7px] py-[4px] hover:text-textWhiteColor;
+  }
+
+  .nav-link::before {
+    @apply content-[''] absolute w-[110%] h-[110%] left-0 right-0 top-0 bottom-0 rounded-full bg-mainColor dark:bg-greenColor  transition-transform scale-x-0 origin-center md:origin-right duration-500 -z-10;
+  }
+  .nav-link.active {
+    @apply text-textColor2;
+  }
+  .active::before,
+  .nav-link:hover::before {
+    @apply scale-x-100 origin-center md:origin-left;
+  }
+  .heading-text {
+    @apply text-3xl lg:text-6xl  font-bold text-textWhiteColor;
+  }
+  .heading-sub-text {
+    @apply underline underline-offset-2 text-mainColor text-wrap decoration-mainColor;
+  }
+  /* .bg-desig{
+        @apply absolute w-[50%] h-[40%] bg-gradient-to-r from-bgDarkColor via-greenColor to-sky-500 opacity-20 blur-[170px] ;
+    } */
+  .footer-link {
+    @apply duration-300 text-base  hover:text-mainColor dark:hover:text-greenColor hover:underline decoration-textColor1 dark:decoration-textWhiteColor  text-navTextColor dark:text-textColor2;
+  }
+}
+
+@layer utilities {
+  .clip-path-add {
+    clip-path: polygon(0% 0%, 100% 0, 100% 0%, 0% 0%);
+  }
+  .clip-path-none {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  /* or another type syle */
+  .navbar.active {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  @media (max-width: 1024px) {
+    html {
+      font-size: 100%;
+    }
+  }
+  @media (max-width: 991px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  @media (max-width: 768px) {
+    html {
+      font-size: 85%;
+    }
+  }
+  @media (max-width: 575px) {
+    html {
+      font-size: 70%;
+    }
+  }
+  @media (max-width: 480px) {
+    html {
+      font-size: 60%;
+    }
+  }
+  @media (max-width: 280px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  .bor {
+    border: 1px solid red;
+  }
+}
